@@ -55,7 +55,7 @@ class ApplicationManager {
             // obtaining png icons inside bundle. defined in info.plist
             if app.bundleIdentifier == "com.apple.mobiletimer" {
                 // use correct paths for clock, because it has arrows
-                app.pngIconPaths += ["circle_borderless@2x~iphone.png"]
+                app.pngIconPaths += ["circle_borderless@2x~iphone.png","circle_borderless@2x~ipad.png"]
             }
             if let CFBundleIcons = infoPlist["CFBundleIcons"] {
                 if let CFBundlePrimaryIcon = CFBundleIcons["CFBundlePrimaryIcon"] as? [String : AnyObject] {
